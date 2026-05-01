@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Switch — Creative Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- HEADER / HERO -->
+  <header class="hero">
+    <nav class="navbar">
+      <a href="" class="logo-link">
+        <img src="img/Switch.png" alt="Switch" class="logo-img">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#what-we-do" class="nav-link">What we do?</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonial</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <form class="search-form" id="search">
+        <input type="search" placeholder="Search…" />
+        <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#what-we-do" class="nav-link">What we do?</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonial</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal">CREATIVE STUDIO</div>
+      <h1 class="hero-title reveal delay-1">
+        Art is<br><span class="hero-accent">Eternal</span><br>Happiness
+      </h1>
+      <p class="hero-sub reveal delay-2">We craft identities, experiences, and stories that leave a mark.</p>
+      <button class="btn-primary reveal delay-3">WORK WITH US</button>
+    </div>
+
+    <a href="#what-we-do" class="scroll-indicator reveal delay-4">
+      <span>scroll down</span>
+      <div class="scroll-line"></div>
+    </a>
+
+    <!-- Noise overlay -->
+    <div class="hero-noise"></div>
+  </header>
+
+  <main>
+
+    <!-- WHAT WE DO -->
+    <section class="section-white" id="what-we-do">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2 class="section-title">WHAT WE DO</h2>
+          <div class="title-line"></div>
+          <p class="section-sub">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="service-card reveal delay-1">
+            <div class="card-num">01</div>
+            <div class="card-icon"><i class="fa-solid fa-camera-retro"></i></div>
+            <h3>Photography</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
+            <a href="" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="service-card reveal delay-2">
+            <div class="card-num">02</div>
+            <div class="card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>Performance</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
+            <a href="" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="service-card reveal delay-3">
+            <div class="card-num">03</div>
+            <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>Branding</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
+            <a href="" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST WORK -->
+    <section class="section-green" id="latest-work">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Portfolio</p>
+          <h2 class="section-title dark-title">OUR LATEST WORK</h2>
+          <div class="title-line dark-line"></div>
+          <p class="section-sub dark-sub">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+        </div>
+
+        <div class="filter-tabs reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="photography">Photography</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="print">Print</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery">
+          <div class="gallery-item" data-cat="photography"><img src="img/img1.jpg" alt=""><div class="gallery-overlay"><span>Photography</span></div></div>
+          <div class="gallery-item" data-cat="design"><img src="img/img2.jpg" alt=""><div class="gallery-overlay"><span>Design</span></div></div>
+          <div class="gallery-item" data-cat="print"><img src="img/img3.jpg" alt=""><div class="gallery-overlay"><span>Print</span></div></div>
+          <div class="gallery-item" data-cat="photography"><img src="img/img4.jpg" alt=""><div class="gallery-overlay"><span>Photography</span></div></div>
+          <div class="gallery-item" data-cat="design"><img src="img/img5.jpg" alt=""><div class="gallery-overlay"><span>Design</span></div></div>
+          <div class="gallery-item" data-cat="print"><img src="img/img6.jpg" alt=""><div class="gallery-overlay"><span>Print</span></div></div>
+          <div class="gallery-item" data-cat="photography"><img src="img/img7.jpg" alt=""><div class="gallery-overlay"><span>Photography</span></div></div>
+          <div class="gallery-item" data-cat="design"><img src="img/img8.jpg" alt=""><div class="gallery-overlay"><span>Design</span></div></div>
+          <div class="gallery-item" data-cat="print"><img src="img/img9.jpg" alt=""><div class="gallery-overlay"><span>Print</span></div></div>
+          <div class="gallery-item" data-cat="photography"><img src="img/img10.jpg" alt=""><div class="gallery-overlay"><span>Photography</span></div></div>
+        </div>
+
+        <div class="section-cta reveal">
+          <a href="" class="btn-outline-dark">View more work <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section-white" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Reviews</p>
+          <h2 class="section-title">TESTIMONIALS</h2>
+          <div class="title-line"></div>
+          <p class="section-sub">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+        </div>
+        <div class="testimonial-wrap reveal delay-1">
+          <div class="quote-mark">"</div>
+          <blockquote>
+            "Awalnya saya tidak menderita penyakit apapun,
+            namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan
+            tidak menderita penyakit apapun!"
+          </blockquote>
+          <div class="testimonial-author">
+            <img src="img/pp.png" alt="Mr. Herp">
+            <div>
+              <h4>Mr. Herp</h4>
+              <span>CEO of Meme, Inc.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAPPY CLIENTS -->
+    <section class="section-grey">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Partners</p>
+          <h2 class="section-title">OUR HAPPY CLIENTS</h2>
+          <div class="title-line"></div>
+          <p class="section-sub">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+        </div>
+        <div class="clients-grid reveal delay-1">
+          <div class="client-logo"><img src="img/800px-Googlelogo.svg" alt="Google"></div>
+          <div class="client-logo"><img src="img/Yahoo_Logo.svg" alt="Yahoo"></div>
+          <div class="client-logo"><img src="img/MSFT_logo_png.svg" alt="Microsoft"></div>
+          <div class="client-logo"><img src="img/293px-Intel-logo.svg.svg" alt="Intel"></div>
+          <div class="client-logo"><img src="img/800px-qualcomm_logo.svg.svg" alt="Qualcomm"></div>
+          <div class="client-logo"><img src="img/800px-Cisco_logo.svg (1).svg" alt="Cisco"></div>
+          <div class="client-logo"><img src="img/Apple-logo.svg" alt="Apple"></div>
+          <div class="client-logo"><img src="img/ASUS_Logo.svg" alt="ASUS"></div>
+        </div>
+        <div class="section-cta reveal">
+          <a href="" class="btn-grey">View more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEET THE TEAM -->
+    <section class="section-green">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Team</p>
+          <h2 class="section-title dark-title">MEET THE TEAM</h2>
+          <div class="title-line dark-line"></div>
+          <p class="section-sub dark-sub">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+        </div>
+        <div class="team-grid reveal delay-1">
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="img/pr1.png" alt="John Doe"></div>
+            <div class="team-accent"></div>
+            <h3>John Doe</h3>
+            <div class="team-socials">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+              <a href="#"><i class="fa-solid fa-basketball"></i></a>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="img/pr2.png" alt="Gabriel Yoshua"></div>
+            <div class="team-accent"></div>
+            <h3>Gabriel Yoshua</h3>
+            <div class="team-socials">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+              <a href="#"><i class="fa-solid fa-basketball"></i></a>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="img/pr3.png" alt="Dylian O'brien"></div>
+            <div class="team-accent"></div>
+            <h3>Dylian O'brien</h3>
+            <div class="team-socials">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+              <a href="#"><i class="fa-solid fa-basketball"></i></a>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="img/pr4.png" alt="Jane Smith"></div>
+            <div class="team-accent"></div>
+            <h3>Jane Smith</h3>
+            <div class="team-socials">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+              <a href="#"><i class="fa-solid fa-basketball"></i></a>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="img/pr5 .png" alt="Zlatan"></div>
+            <div class="team-accent"></div>
+            <h3>Zlatan</h3>
+            <div class="team-socials">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+              <a href="#"><i class="fa-solid fa-basketball"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="section-cta reveal">
+          <button class="btn-primary-dark">WORK WITH US</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-col about-col">
+        <h4 class="footer-heading">ABOUT US</h4>
+        <div class="footer-hr"></div>
+        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-behance"></i></a>
+          <a href="#"><i class="fa-solid fa-basketball"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col posts-col">
+        <h4 class="footer-heading">RECENT POSTS</h4>
+        <div class="footer-hr"></div>
+        <div class="post-item">
+          <img src="img/img1.jpg" alt="">
+          <div><p>Lorem Ipsum Dolor Sit Amet.</p><span class="tag tag-green">MAGAZINE</span></div>
+        </div>
+        <div class="post-item">
+          <img src="img/img2.jpg" alt="">
+          <div><p>Lorem Ipsum Dolor Sit Amet.</p><span class="tag tag-yellow">UI DESIGN</span></div>
+        </div>
+        <div class="post-item">
+          <img src="img/img3.jpg" alt="">
+          <div><p>Lorem Ipsum Dolor Sit Amet.</p><span class="tag tag-blue">PHOTOGRAPHY</span></div>
+        </div>
+        <div class="post-item">
+          <img src="img/img3.jpg" alt="">
+          <div><p>Lorem Ipsum Dolor Sit Amet.</p><span class="tag tag-red">UI DESIGN</span></div>
+        </div>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4 class="footer-heading">CONTACT US</h4>
+        <div class="footer-hr"></div>
+        <p class="footer-address">10044 West 23th Street, Suite 721<br>New York NY 10010<br>Email: Username@email.com<br>Phone: +1 (0) 123 4567 890</p>
+        <form class="footer-form">
+          <input type="text" placeholder="Your Name..">
+          <input type="email" placeholder="Your Email..">
+          <textarea placeholder="Your Message.."></textarea>
+          <button type="submit">SEND <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-press">
+      <h4 class="footer-heading">AS SEEN ON</h4>
+      <div class="footer-hr"></div>
+      <div class="press-logos">
+        <img src="img/Cnn.svg.svg" alt="CNN">
+        <img src="img/TechCrunch_Logo_2013.svg" alt="TechCrunch">
+        <img src="img/300px-BBC.svg.svg" alt="BBC">
+        <img src="img/The_New_York_Times.svg.svg" alt="NYT">
+      </div>
+    </div>
+
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
